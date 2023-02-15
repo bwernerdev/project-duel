@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #999;
+    background-color: #000;
     background-image: url(./img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,13 +37,15 @@ body {
     height: 200px;
     overflow-y: scroll;
     border-radius: 20px;
-    background-color: #999;
+    background-color: #CCC;
 }
 
 .attackButton {
     width: 100px;
     height: 30px;
     margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 .name {
@@ -52,7 +54,7 @@ body {
     margin-top: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .button {
