@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #999;
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .fightarea {
     display: flex;
     gap: 20px;
@@ -18,10 +29,38 @@
     height: inherit;
     background-color: red;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
 .log {
-    border: 1px dotted #999;
+    border: 1px dotted #000;
     height: 200px;
     overflow-y: scroll;
+    border-radius: 20px;
+    background-color: #999;
+}
+
+.attackButton {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 17px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.log li{
+    list-style-type: none;
+    margin-top: 10px;
 }
