@@ -77,6 +77,10 @@ const stage = {
         let f2Pct = (this.fighter2.life / this.fighter2.maxLife) * 100;
         this.fighter2El.querySelector('.bar').style.width = `${f2Pct}%`
 
+        const ulElement = document.querySelector('.log');
+
+        ulElement.scrollTo(0, ulElement.scrollHeight)
+
     },
     doAttack(attacking, attacked) {
         if(attacking.life <= 0) {
@@ -100,10 +104,7 @@ const stage = {
         } else {
             log.addMessage(`${attacked.name} conseguiu defender.`)
         }
-        const ulElement = document.querySelector('.log');
-
-        ulElement.scrollTo(0, ulElement.scrollHeight)
-
+        
         this.update();
     }
 }
