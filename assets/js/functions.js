@@ -80,10 +80,10 @@ const stage = {
     },
     doAttack(attacking, attacked) {
         if(attacking.life <= 0) {
-            log.addMessage(`${attacking.name} ja está morto!`)
+            alert(`${attacking.name} ja está morto!`)
             return;
         } else if (attacked.life <= 0) {
-            log.addMessage(`${attacked.name} ja está morto!`)
+            alert(`${attacked.name} ja está morto!`)
             return;
         }
 
@@ -100,6 +100,9 @@ const stage = {
         } else {
             log.addMessage(`${attacked.name} conseguiu defender.`)
         }
+        const ulElement = document.querySelector('.log');
+
+        ulElement.scrollTo(0, ulElement.scrollHeight)
 
         this.update();
     }
@@ -120,3 +123,4 @@ const log = {
         }
     }
 }
+
