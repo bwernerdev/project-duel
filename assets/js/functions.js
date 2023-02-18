@@ -28,6 +28,29 @@ const createSorcerer = (name) => {
     }
 }
 
+const createAssassin = (name) => {
+    return {
+        ...defaultCharacter,
+        name,
+        life: 80,
+        maxLife: 80,
+        attack: 12,
+        defense: 7
+    }
+}
+
+const createTank = (name) => {
+    return {
+        ...defaultCharacter,
+        name,
+        life: 200,
+        maxLife: 200,
+        attack: 6,
+        defense: 15
+    }
+}
+
+
 const createLittleMonster = () => {
     return {
         ...defaultCharacter,
@@ -43,6 +66,17 @@ const createBigMonster = () => {
     return {
         ...defaultCharacter,
         name: 'Big Monster',
+        life: 60,
+        maxLife: 60,
+        attack: 6,
+        defense: 6
+    }
+}
+
+const createBoss = () => {
+    return {
+        ...defaultCharacter,
+        name: 'Boss',
         life: 120,
         maxLife: 120,
         attack: 16,
@@ -125,3 +159,24 @@ const log = {
     }
 }
 
+    function clickButton() {
+        if (document.querySelector('.fightarea').style.display == 'flex') {
+            document.querySelector('.fightarea').style.display = 'none';
+            document.querySelector('.char-select-container').style.display = 'flex';
+            document.querySelector('.log').style.display = 'none';
+        } else {
+            document.querySelector('.fightarea').style.display = 'flex'
+            document.querySelector('.char-select-container').style.display = 'none';
+            document.querySelector('.log').style.display = 'block'
+        }
+    }
+
+    // if(document.querySelector("Knight")) {
+    //     return createKnight()
+    // } else if(document.querySelector("Sorcerer")){
+    //     return createSorcerer()
+    // }   else if(document.querySelector("Assassin")){
+    //     return createAssassin()
+    // } else if(document.querySelector("Tank")){
+    //     return createTank()
+    // }

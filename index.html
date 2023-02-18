@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <div class="char-select-container">
+        <div class="char-pannel">
+            <div class="char-class">
+            <select name="Character">
+                <option selected>Escolha sua Classe</option>
+                <option value="Knight">Knight</option>
+                <option value="Sorcerer">Sorcerer</option>
+                <option value="Assassin">Assassin</option>
+                <option value="Tank">Tank</option>
+            </select>
+            </div>
+            <div class="char-name">
+                <input type="text" placeholder="Escolha seu nickname" class="teste">
+            </div>
+            <button class="start-button " onclick="clickButton()">Começar</button>
+        </div>
+    </div>
+
+    <div class="hide-menu">
     <div class="fightarea">
         <div id="char">
             <div class="lifebar">
@@ -32,6 +51,7 @@
     <ul class="log">
 
     </ul>
+    </div>
 
     <script src="./assets/js/functions.js"></script> 
     <script src="./assets/js/script.js"></script>

@@ -1,5 +1,10 @@
-const char = createKnight('Kina');
-const monster = createLittleMonster();
+const char = createTank()
+const monster = createBoss();
+
+// const knight = createKnight('')
+// const sorcerer = createSorcerer('')
+// const assassin = createAssassin('')
+// const tank = createTank('')
 
 stage.start(
     char,
